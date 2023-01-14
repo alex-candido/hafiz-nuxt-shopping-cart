@@ -4,7 +4,7 @@
       Shopping Website
     </v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-btn class="text-none" stacked>
+    <v-btn @click="$router.push('/Cart')" class="text-none" stacked>
       <v-badge :content="9" color="error">
         <v-icon>mdi-cart-outline</v-icon>
       </v-badge>
