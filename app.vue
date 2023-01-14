@@ -1,5 +1,7 @@
 <template>
   <v-app id='inspire'>
+    <!-- Header -->
+    <Header />
     <v-main>
       <v-container>
         <RouterView />
