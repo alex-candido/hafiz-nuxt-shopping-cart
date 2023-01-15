@@ -1,51 +1,50 @@
-# Origin: https://github.com/hafizjavaid/Nuxt3-Vuetify3-Starter-Kit.git
+<img alt="Shopping Cart" src="./assets/shopping-cart-banner.png" />
 
-# Nuxt 3 and Vuetify 3 Starter 
+# Shopping Cart Application
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-Look at the [Vuetify 3 documentation](https://next.vuetifyjs.com/en/getting-started/installation/) to learn more.
+Shopping Cart é uma aplicação NuxtJS 3 de carrinho de compras, tendo como aplicabilidade ser um gerenciador de carrinho de compras, suas funcionalidade são, listagem de produtos disponíveis para compras, adicionar uma quantidade específicas de itens no carrinho, aumentar ou remover a quantidade de itens no carrinho, exibir o total de itens no carrinho no Header, e em uma segunda página exibir itens e valores de checkout com total da soma dos itens no carrinho.
 
+Abordagens como padronização de projetos NuxtJS, VueJS 3, Typescript, Vuetify 3, Vue Store Pinia, Componetização, Vue Router.
 
-# Following things are included
+## 🚀 Abordagens
 
-1. How to use material design icons in Nuxt 3 and Vuetify 3
-2. How to add / create theme switcher in Vuetify 3
+- Typescript
+- NuxtJS
+- VueJS 3
+- Vuetify 3
+- Vue Store Pinia
+- Componetização
+- Vue Router
 
-## Setup
+## 📌 Foi utilizado Frontend
 
-Make sure to install the dependencies:
+#### Dependências de Projeto
 
-```bash
-# yarn
-yarn install
+- nuxt: 3.0.0
 
-# npm
-npm install
+#### Dependências de Desenvolvimento
 
-# pnpm
-pnpm install --shamefully-hoist
+- @fortawesome/fontawesome-free: ^6.2.1,
+- @mdi/font: ^7.0.96,
+- @pinia/nuxt: ^0.4.6,
+- sass: ^1.56.1,
+- vuetify: ^3.0.2
+
+## ▶️ Iniciando a aplicação
+
+- Clone esse repositório
+```
+$ git clone https://github.com/alex-candido/nuxt-shopping-cart.git
+```
+- Instalar dependências 
+```
+$ yarn 
+```
+- Inicie o projeto 
+```
+$ yarn dev
 ```
 
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+<img src="./assets/home-list.png" alt="Home List">
+<img src="./assets/hhome-grid.png" alt="Home Grid">
+<img src="./assets/cart-details.png" alt="Cart Details">
