@@ -46,5 +46,5 @@ $ yarn dev
 ```
 
 <img src="./assets/home-list.png" alt="Home List">
-<img src="./assets/hhome-grid.png" alt="Home Grid">
+<img src="./assets/home-grid.png" alt="Home Grid">
 <img src="./assets/cart-details.png" alt="Cart Details">

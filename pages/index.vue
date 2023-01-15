@@ -4,12 +4,12 @@
       <v-col cols="12">
         <v-btn @click="grid = !grid" :class="{'bg-primary': grid}">
           <v-icon>
-            mdi-view-list
+            mdi-apps
           </v-icon>
         </v-btn>
         <v-btn @click="grid = !grid" :class="{'bg-primary': !grid}" class="ml-3">
           <v-icon>
-            mdi-apps
+            mdi-view-list
           </v-icon>
         </v-btn>
       </v-col>
