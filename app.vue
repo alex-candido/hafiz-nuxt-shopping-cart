@@ -1,5 +1,5 @@
 <template>
-  <v-app id='inspire'>
+  <v-app id='inspire' :theme="useCartStore().getTheme">
     <!-- Header -->
     <Header />
     <v-main>
@@ -11,4 +11,6 @@
 </template>
 
 <script setup>
+import { useCartStore } from './store/cart';
+
 </script>

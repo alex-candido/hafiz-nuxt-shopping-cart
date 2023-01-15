@@ -5,25 +5,23 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-btn @click="$router.push('/Cart')" class="text-none" stacked>
-      <v-badge :content="9" color="error">
-        <v-icon>mdi-cart-outline</v-icon>
+      <v-badge :content="cartStore.productsTotal" color="error">
+        <v-icon> mdi-cart-outline </v-icon>
       </v-badge>
     </v-btn>
-    <!-- <v-btn 
-    :prepend-icon="theme === 'light' ? 'mdi-weather-sunny': 'mdi-weather-night'"
+    <v-btn
+      :prepend-icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
+      @click="cartStore.toggleTheme()"
     >
-      Togle Theme
-    </v-btn> -->
-    <v-btn :prepend-icon="'mdi-weather-sunny'">
-      Togle Theme
+      Toggle Theme
     </v-btn>
   </v-app-bar>
 </template>
 
 <script setup>
-
+import { useCartStore } from "../store/cart";
+const cartStore = useCartStore();
 </script>
 
 <style lang="scss" scoped>
-
 </style>

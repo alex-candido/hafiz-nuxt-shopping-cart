@@ -32,6 +32,14 @@ export const useCartStore = defineStore("cart", {
         }
         return acc + 0;
       }, 0);
+    },
+    productsTotal(): any {
+      return Object.keys(this.cartContent).reduce((acc, id) => {
+        return acc + this.cartContent[id].quantity
+      }, 0);
+    },
+    getTheme(): any {
+      return this.theme;
     }
   },
   actions: {
@@ -60,6 +68,9 @@ export const useCartStore = defineStore("cart", {
     },
     removeProduct(productId: any) {
       delete this.cartContent[productId];
+    },
+    toggleTheme() {
+      this.theme = this.theme === "light" ? "dark" : "light";
     }
   }
 });
