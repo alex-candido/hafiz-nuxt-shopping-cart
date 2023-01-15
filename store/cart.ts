@@ -23,6 +23,15 @@ export const useCartStore = defineStore("cart", {
             dataProducts.find((p) => p.id === product.productId).price,
         }
       })
+    },
+    total(): any {
+      return Object.keys(this.cartContent).reduce((acc, id) => {
+        const product = products.find((p) => p.id === id);
+        if (product) {
+          return acc + product.price * this.cartContent[id].quantity;
+        }
+        return acc + 0;
+      }, 0);
     }
   },
   actions: {
