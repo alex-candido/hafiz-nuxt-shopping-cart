@@ -93,8 +93,8 @@
 </template>
 
 <script setup>
-// import { useCartStore } from '../stores/cart.js';
-// const cartStore = useCartStore();
+import { useCartStore } from '../store/cart.ts';
+const cartStore = useCartStore();
 </script>
 
 <style lang="scss" scoped></style>

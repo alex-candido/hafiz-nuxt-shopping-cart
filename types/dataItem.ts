@@ -1,9 +1,17 @@
 export interface DataProps {
-  id: number;
+  id: string;
   name: string;
   price: number;
   image: string;
   description: string;
+}
+
+export interface formattedCartProps {
+  id: string;
+  image: string;
+  name: string;
+  price: number;
+  quantity: number;
 }
 
 export interface ContentProps {

@@ -1,13 +1,11 @@
 import { defineStore } from 'pinia';
 import products from '~~/data';
 
-// import products from '../data'
-
 export const useCartStore = defineStore("cart", {
   state: () => ({
-    cartContent: {} as any,
-    theme: "light" as any,
-  }),
+    cartContent: {},
+    theme: "light",
+  }) as any,
   getters: {
     formattedCart(): any {
       return Object.keys(this.cartContent).map(productId => {
@@ -19,7 +17,10 @@ export const useCartStore = defineStore("cart", {
           image: dataProducts.find((p) => p.id === product.productId).image,
           name: dataProducts.find((p) => p.id === product.productId).name,
           price: dataProducts.find((p) => p.id === product.productId).price,
-          // quantity: dataProducts.quantity * dataProducts
+          quantity: product.quantity,
+          cost:
+            product.quantity *
+            dataProducts.find((p) => p.id === product.productId).price,
         }
       })
     }
@@ -29,7 +30,7 @@ export const useCartStore = defineStore("cart", {
       if (this.cartContent.hasOwnProperty(productId)) {
        this.cartContent[productId] = {
         productId,
-        quantity: this.cartContent[productId].quantity +1,
+        quantity: this.cartContent[productId].quantity + 1,
        };
       } else {
         this.cartContent[productId] = {
@@ -37,6 +38,19 @@ export const useCartStore = defineStore("cart", {
           quantity: 1,
         };
       }
+    },
+    remove(productId: any) {
+      if (!this.cartContent[productId]) {
+        return 
+      }
+      this.cartContent[productId].quantity -= 1;
+
+      if (this.cartContent[productId].quantity === 0) {
+        delete this.cartContent[productId];
+      }
+    },
+    removeProduct(productId: any) {
+      delete this.cartContent[productId];
     }
   }
 });
