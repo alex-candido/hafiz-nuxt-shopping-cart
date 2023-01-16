@@ -2,7 +2,7 @@
 
 # Shopping Cart Application
 
-Shopping Cart é uma aplicação NuxtJS 3 de carrinho de compras, tendo como aplicabilidade ser um gerenciador de carrinho de compras, suas funcionalidade são, listagem de produtos disponíveis para compras, adicionar uma quantidade específicas de itens no carrinho, aumentar ou remover a quantidade de itens no carrinho, exibir o total de itens no carrinho no Header, e em uma segunda página exibir itens e valores de checkout com total da soma dos itens no carrinho.
+Shopping Cart é uma aplicação NuxtJS 3 de carrinho de compras, tendo como aplicabilidade ser um gerenciador de carrinho de compras, suas funcionalidade são, listagem de produtos disponíveis para compras, adicionar uma quantidade específicas de itens no carrinho, aumentar ou remover a quantidade de itens no carrinho, exibir o total de itens no carrinho no Header, e em uma segunda página exibir itens e valores de checkout com total da soma dos itens no carrinho. Acesse [Play Books](https://nuxt-shopping-cart.netlify.app/).
 
 Abordagens como padronização de projetos NuxtJS, VueJS 3, Typescript, Vuetify 3, Vue Store Pinia, Componetização, Vue Router.
 
